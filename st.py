@@ -1,5 +1,6 @@
 import streamlit as st
-from email.mime.text import MIMEText
+import base64
+
 
 # Configuration de la page
 st.set_page_config(page_title="Portfolio de Bereket", page_icon="🔧", layout="wide")
@@ -264,37 +265,36 @@ elif choice == "Certifications":
         """,
         unsafe_allow_html=True,
     )
-
 elif choice == "CV":
     st.header("📄 Mon CV")
+    
+    # Chemin du fichier PDF pour le téléchargement
+    pdf_path = "CV_Bereket_Tadiwos.pdf"
+    # Chemin de l'image PNG pour l'affichage
+    png_path = "image/Bereket_Tadiwos_CV-1.png"
+    
     try:
-        # Chemin du fichier PDF
-        cv_path = "CV_Bereket_Tadiwos.pdf"
-
-        with open(cv_path, "rb") as cv_file:
-            # Télécharger le fichier
+        # Lire et afficher l'image PNG (CV sous forme d'image avec encadrement)
+        with open(png_path, "rb") as img_file:
+            img_base64 = base64.b64encode(img_file.read()).decode("utf-8")
+            st.markdown(
+                f"""
+                <div style="border: 2px solid #ff4d4d; border-radius: 10px; width: 855px; height: 800px; margin: auto; 
+                            padding: 10px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); overflow: hidden; text-align: center;">
+                    <img src="data:image/png;base64,{img_base64}" alt="CV" style="max-width: 100%; height: 100%; object-fit: contain; border-radius: 10px;">
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        
+        # Ajouter un bouton pour télécharger le fichier PDF
+        with open(pdf_path, "rb") as pdf_file:
             st.download_button(
-                label="📥 Télécharger mon CV",
-                data=cv_file,
+                label="📥 Télécharger mon CV (PDF)",
+                data=pdf_file,
                 file_name="Bereket_Tadiwos_CV.pdf",
                 mime="application/pdf",
             )
-
-        # Convertir le PDF en base64 pour affichage
-        import base64
-
-        with open(cv_path, "rb") as pdf_file:
-            base64_pdf = base64.b64encode(pdf_file.read()).decode("utf-8")
-            pdf_display = f"""
-            <div style="border: 2px solid #ff4d4d; border-radius: 10px; width: 855px; height: 800px; margin: auto; 
-                        padding: 10px; box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); overflow: hidden;">
-                <iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="100%" style="border: none;"></iframe>
-            </div>
-            """
-            st.markdown(pdf_display, unsafe_allow_html=True)
-
+    
     except FileNotFoundError:
-        st.error("Le fichier du CV est introuvable. Veuillez vérifier son emplacement.")
-
-
-
+        st.error("Le fichier du CV ou de l'image est introuvable. Veuillez vérifier leur emplacement.")
