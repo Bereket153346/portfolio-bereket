@@ -18,7 +18,7 @@ def afficher_liens():
     )
 
 # Contenu principal
-menu = ["Accueil", "Parcours Académique", "Certifications", "CV", "Contact"]
+menu = ["Accueil", "Parcours Académique", "Certifications", "CV"]
 choice = st.radio("", menu, horizontal=True)
 
 if choice == "Accueil":
@@ -298,46 +298,3 @@ elif choice == "CV":
 
 
 
-
-elif choice == "Contact":
-    st.header("📞 Contactez-moi")
-    with st.form("contact_form"):
-        name = st.text_input("Nom")
-        email = st.text_input("Email")
-        message = st.text_area("Message")
-        submitted = st.form_submit_button("Envoyer")
-        
-        if submitted:
-            # Configuration de votre email
-            sender_email = "berekettkelesi@gmail.com"  # Votre adresse Gmail
-            sender_password = "votre_mot_de_passe"  # Mot de passe d'application Gmail
-            recipient_email = "berekettkelesi@gmail.com"  # Adresse où recevoir les messages
-            
-            # Préparer le contenu de l'email
-            subject = f"Nouveau message de {name} via votre portfolio"
-            body = f"""
-            Nouveau message reçu via votre portfolio :
-
-            Nom : {name}
-            Email : {email}
-            Message :
-            {message}
-            """
-
-            try:
-                # Créer l'objet email
-                msg = MIMEText(body)
-                msg["Subject"] = subject
-                msg["From"] = sender_email
-                msg["To"] = recipient_email
-
-                # Connexion et envoi via SMTP
-                with smtplib.SMTP("smtp.gmail.com", 587) as server:
-                    server.starttls()  # Démarrer une connexion sécurisée
-                    server.login(sender_email, sender_password)  # Se connecter
-                    server.sendmail(sender_email, recipient_email, msg.as_string())  # Envoyer l'email
-                
-                st.success("Votre message a été envoyé avec succès ! Vous serez contacté sous peu.")
-            
-            except Exception as e:
-                st.error(f"Une erreur est survenue lors de l'envoi du message : {e}")
