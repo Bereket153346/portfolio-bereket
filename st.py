@@ -477,7 +477,7 @@ elif choice == "Projets & Compétences":
             <div class="animated-box" style="flex: 1; margin: 10px; padding: 20px; border-radius: 30px; 
                         background-color: #1c1c1c;">
                 <h4 style="color: #ffffff;">Graph_Encrypt</h4>
-                <p style="color: #bbbbbb;">Chiffrement des données avec des graphes via l'algo de Kruskal.</p>
+                <p style="color: #bbbbbb;">Chiffrement des données avec des graphes via l'algo de Kruskal. Dans ce projet, nous avons développé un algorithme de chiffrement et de déchiffrement en utilisant la théorie des graphes, et plus précisément l'algorithme de Kruskal pour générer un arbre couvrant minimal. Cet algorithme permet de sécuriser les données en exploitant les propriétés mathématiques des graphes, garantissant ainsi une méthode de chiffrement originale et efficace. L'approche repose sur la minimisation des coûts à travers l'arbre couvrant, ce qui renforce la sécurité tout en maintenant une performance optimale. Ce projet illustre une utilisation innovante de concepts théoriques appliqués à la cybersécurité. </p>
                 <a href="https://github.com/Bereket153346/Graph_Encrypt.git" target="_blank" 
                    style="display: inline-block; padding: 10px 20px; background-color: #ff0000; 
                           color: #fff; text-decoration: none; border-radius: 5px;">
@@ -487,7 +487,7 @@ elif choice == "Projets & Compétences":
             <div class="animated-box" style="flex: 1; margin: 10px; padding: 20px; border-radius: 30px; 
                         background-color: #1c1c1c;">
                 <h4 style="color: #ffffff;">Détection d'Intrusion</h4>
-                <p style="color: #bbbbbb;">Détection des attaques réseau avec des modèles machine learning.</p>
+                <p style="color: #bbbbbb;">Détection des attaques réseau avec des modèles machine learning. Dans ce projet, j'ai développé un système de détection d'intrusions réseau en utilisant des techniques de machine learning. J'ai travaillé sur un dataset contenant des données de trafic réseau capturées, comprenant des connexions normales et des attaques classées en quatre catégories principales : DoS, Probe, R2L et U2R. Chaque connexion était décrite par 41 caractéristiques, comme la durée, le protocole utilisé, ou le nombre de connexions vers d'autres hôtes. Mon objectif était de construire un modèle capable de classifier efficacement ces activités réseau. Cela a impliqué plusieurs étapes, notamment la préparation des données, le choix des algorithmes adaptés et l'optimisation des hyperparamètres pour améliorer la précision du modèle final.</p>
                 <a href="https://github.com/Bereket153346/intrusion_detection_machine_learning.git" target="_blank" 
                    style="display: inline-block; padding: 10px 20px; background-color: #ff0000; 
                           color: #fff; text-decoration: none; border-radius: 5px;">
