@@ -302,19 +302,22 @@ elif choice == "Certifications":
             <div style="flex: 1; margin: 10px; padding: 15px; border-radius: 30px; 
                         animation: alternateBoxShadow 12s infinite; background-color: #1c1c1c;">
                 <h4 style="color: #ff4d4d;">Network Architecture: CCNA1</h4>
-                <p style="color: #bbbbbb;">Administration avancée des réseaux.</p>
+                <p style="color: #bbbbbb;">Certification Cisco Networking Academy, <strong>CCNA1</strong> </p>
             </div>
             <div style="flex: 1; margin: 10px; padding: 15px; border-radius: 30px; 
                         animation: alternateBoxShadow 12s infinite; background-color: #1c1c1c;">
                 <h4 style="color: #ff4d4d;">Stormshield Network Administrator</h4>
-                <p style="color: #bbbbbb;">Administration avancée des pare-feux Stormshield.</p>
+                <p style="color: #bbbbbb;">Certification Stormshield Network Administrator.</p>
             </div>
         </div>
         <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
             <div style="flex: 1; margin: 10px; padding: 15px; border-radius: 30px; 
                         animation: alternateBoxShadow 12s infinite; background-color: #1c1c1c;">
                 <h4 style="color: #ff4d4d;">INE : Certification eJPT</h4>
-                <p style="color: #bbbbbb;">Certification en pentesting junior.</p>
+                <p style="color: #bbbbbb;">La certification eJPT, conçue pour les débutants, 
+                valide mes compétences en tests de pénétration, incluant l'audit 
+                des systèmes et la sécurité des réseaux, hôtes et applications web.
+                  Une belle première étape dans le domaine de la cybersécurité.</p>
                 <a href="https://certs.ine.com/4b91cbe8-1150-4dec-ab2e-005ae8c40a5b#acc.wL7ngE2O" target="_blank" 
                    style="display: inline-block; padding: 8px 18px; background-color: #ff4d4d; 
                           color: #fff; text-decoration: none; border-radius: 5px; 
@@ -325,7 +328,8 @@ elif choice == "Certifications":
             <div style="flex: 1; margin: 10px; padding: 15px; border-radius: 30px; 
                         animation: alternateBoxShadow 12s infinite; background-color: #1c1c1c;">
                 <h4 style="color: #ff4d4d;">Gestion de Projet</h4>
-                <p style="color: #bbbbbb;">Certification en gestion de projet.</p>
+                <p style="color: #bbbbbb;">Certification en gestion de projet. Cette certification montre que j'ai acquis les bases de la gestion de projet, comme la planification,
+                  l'organisation et la coordination, pour mener à bien des projets.</p>
                 <a href="https://moocgdp.gestiondeprojet.pm/certificates/1e10af53ef324f4a9bf57139b5107fea" target="_blank" 
                    style="display: inline-block; padding: 8px 18px; background-color: #ff4d4d; 
                           color: #fff; text-decoration: none; border-radius: 5px; 
@@ -452,9 +456,9 @@ elif choice == "Projets & Compétences":
                 <ul>
                     <li><strong>Malwarebytes</strong> : Protection et analyse des systèmes</li>
                     <li><strong>Primo</strong> : Gestion des ordinateurs et périphériques</li>
-                    <li><strong>Google Workspace</strong> : Outils collaboratifs</li>
-                    <li><strong>Kali Linux</strong> : Tests de pénétration et sécurité</li>
-                    <li><strong>WatchGuard Firewalls</strong> : Gestion des firewalls avancés</li>
+                    <li><strong>Google Workspace</strong> : Outils collaboratifs utilisés dans un cadre professionnel</li>
+                    <li><strong>Kali Linux</strong> : Utilisation pour l'entraînement aux tests d'intrusion et au pentesting</li>
+                    <li><strong>WatchGuard Firewalls</strong> : Gestion et supervision des pare-feu, avec analyse approfondie des flux réseau </li>
                     <li><strong>Stormshield</strong> : Configuration et gestion des pare-feux</li>
                     <li><strong>Microsoft Office 365</strong> : Bureautique avancée</li>
                     <li><strong>Unifi Wi-Fi Deployment</strong> : Configuration et gestion des bornes Unifi</li>
